@@ -94,6 +94,17 @@ function init()
 {
 	onResize();
 
+	// sticky-header function
+
+	$(window).scroll(function(){
+	 var winTop = $(window).scrollTop();
+	 if(winTop >= 30){
+		 $("body").addClass("sticky-header");
+	 }else{
+		 $("body").removeClass("sticky-header");
+	 }
+	});
+
 	// 🖱 bind weather menu buttons
 
 	for(var i = 0; i < weather.length; i++)
