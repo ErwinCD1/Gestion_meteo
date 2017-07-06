@@ -4,6 +4,7 @@
 	<title>API Example</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/api_ville_meteo.js"></script>
 	<script type="text/javascript" src="js/api_prevision.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 
@@ -71,13 +72,20 @@
 
 
 	<div id="body_corp">
-			<input id="input" type="text" readonly="" placeholder='Dite " Météo à " + nom de la ville !'> <button id="rec">Speak</button>
-			<input type="text" name="city" placeholder="Saisissez une ville" id="city">
-			<button id="city_btn">GO</button>
+			<input id="input" type="text" readonly="" placeholder='Dite " Météo à " + nom de la ville !'>
+
+			<div class="buttonRec">
+				<div class="inner">
+				</div>
+			</div>
+
+			<input type="text" name="city" placeholder="Saisissez une ville" id="city" hidden="">
+			<button id="city_btn" hidden="">GO</button>
 	</div>
 
 
-<script type="text/javascript" src="js/api_ville_meteo.js"></script>
+
+
 <span id="result_city"></span>
 
 
