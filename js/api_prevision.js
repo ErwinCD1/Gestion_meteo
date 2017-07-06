@@ -90,6 +90,9 @@ function send() {
           setInput2(data.result.parameters.geocityfr);
           geocityfr = data.result.parameters.geocityfr;
           getMeteo();
+          $('.background').show();
+          $('.wrapper').show();
+          $('#body_corp').hide();
         }
         else {
           alert(non_compris);
