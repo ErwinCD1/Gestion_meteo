@@ -7,24 +7,6 @@ $( document ).ready(function() {
 
 var view = "";
 
-/*$('#city').keydown(function (event) {
-    var keypressed = event.keyCode || event.which;
-    if (keypressed == 13) {
-      var result = $('#city').val();
-        $.getJSON('http://www.prevision-meteo.ch/services/json/'+result, function(data) {
-            console.log(data);
-            $('#result_city').append(data);
-        });
-    }
-});*/
-
-/*$('#city').onchange(function (event) {
-      var result = $('#city').val();
-        $.getJSON('http://www.prevision-meteo.ch/services/json/'+result, function(data) {
-            console.log(data);
-            $('#result_city').append(data);
-        });
-});*/
 getMeteo = function getMeteo(){
   var result = $('#city').val();
 
